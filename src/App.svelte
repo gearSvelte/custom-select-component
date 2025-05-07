@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Dog from './lib/Dog.svelte';
   import Select from './lib/Select.svelte';
   import type { TOption } from './types/option.interface';
 
@@ -24,6 +25,8 @@
       >
     </div>
   {/if}
+  <hr />
+  <Dog />
 </main>
 
 <style lang="scss">

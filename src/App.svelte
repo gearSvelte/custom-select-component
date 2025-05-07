@@ -18,7 +18,10 @@
   <Select {options} on:select={handleSelect} />
   {#if selected !== null}
     <div class="selected">
-      You selected: <span class="selected-value">{selected}</span>
+      You selected: <span
+        style="color: {selected ?? 'black'}"
+        class="selected-value">{selected}</span
+      >
     </div>
   {/if}
 </main>
